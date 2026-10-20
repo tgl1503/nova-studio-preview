@@ -1,4 +1,4 @@
-const SITE_CONFIG={studioName:'NOVA',whatsapp:'5500000000000',message:'OlÃ¡! Quero conversar sobre um site profissional para minha empresa.'};
+const SITE_CONFIG={studioName:'NOVA',whatsapp:'5500000000000',message:'Olá! Quero conversar sobre um site profissional para minha empresa.'};
 document.querySelectorAll('[data-whatsapp]').forEach(link=>link.href=`https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(SITE_CONFIG.message)}`);
 
 const menuButton=document.querySelector('.menu-toggle');const mobileMenu=document.querySelector('.mobile-menu');
@@ -25,4 +25,3 @@ window.addEventListener('load',()=>{
   document.querySelectorAll('.case-image img').forEach(img=>gsap.fromTo(img,{scale:1.12},{scale:1,scrollTrigger:{trigger:img.closest('.case'),start:'left right',end:'right left',scrub:true,horizontal:true}}));
   document.querySelectorAll('.service-grid article').forEach(el=>gsap.from(el,{y:70,opacity:.2,scrollTrigger:{trigger:el,start:'top 90%',end:'top 60%',scrub:.7}}));gsap.to('.process-core',{rotation:100,scrollTrigger:{trigger:'.process',start:'top bottom',end:'bottom top',scrub:true}});document.querySelectorAll('.process li').forEach(el=>gsap.from(el.children,{y:45,opacity:.2,stagger:.08,scrollTrigger:{trigger:el,start:'top 80%',end:'center 55%',scrub:.8}}));gsap.from('.about-image img',{scale:1.18,scrollTrigger:{trigger:'.about',start:'top bottom',end:'bottom top',scrub:true}});gsap.from('.final-cta h2',{scale:.82,opacity:.2,transformOrigin:'left',scrollTrigger:{trigger:'.final-cta',start:'top bottom',end:'center center',scrub:1}});gsap.to('.cta-visual img',{scale:1.12,yPercent:-5,scrollTrigger:{trigger:'.final-cta',start:'top bottom',end:'bottom top',scrub:true}});
 });
-
