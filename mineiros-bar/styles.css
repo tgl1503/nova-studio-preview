@@ -3,3 +3,45 @@
 @media(max-width:640px){.section-shell,.site-header{width:min(100% - 26px,var(--max))}.demo-strip{font-size:9px}.demo-strip span{display:none}.hero{min-height:auto;padding-bottom:70px;gap:40px}.hero-visual{height:460px}.hero-visual img{height:450px}.floating-card{display:none}.visual-label{right:5px}.hero-actions{width:100%;flex-direction:column}.button{width:100%}.problem-band,.experience,.admin-section,.numbers-section,.whatsapp-section{padding:82px 0}.steps{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line);min-height:auto}.step:last-child{border-bottom:0}.menu-demo-top>span{display:none}.category-tabs{padding-bottom:2px}.admin-grid{gap:40px}.calculation>div{min-height:108px}.install-section{padding:70px 0}.install-card{padding:34px 24px}.install-copy h2{font-size:37px}.install-icons div{width:92px;height:92px}.clarity-card{grid-template-columns:1fr}.clarity{padding-bottom:75px}.final-cta{padding:90px 0}footer .section-shell{flex-direction:column;align-items:flex-start;gap:20px}.chat-phone{border-width:7px}.order-card{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
 
+/* Mobile-first refinement: optimized for real phone viewports and touch. */
+html{scroll-padding-top:88px;-webkit-text-size-adjust:100%}body{min-width:320px}a,button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+@media(max-width:640px){
+  :root{--radius:18px}
+  html{scroll-padding-top:74px}
+  .section-shell,.site-header{width:calc(100% - 32px)}
+  .demo-strip{min-height:32px;padding:6px 14px;font-size:9px;line-height:1.35}
+  .site-header{position:sticky;top:0;height:66px;width:100%;padding:0 16px;background:rgba(11,9,8,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}
+  .brand-mark{width:34px;height:34px}.brand strong{font-size:11px}.brand em{font-size:17px}
+  .menu-button{min-width:54px;min-height:42px;font-weight:800}
+  .site-header nav{position:fixed;top:66px;left:12px;right:12px;border-radius:16px;padding:10px;background:#17110e;box-shadow:0 24px 60px rgba(0,0,0,.55)}
+  .site-header nav a{min-height:48px;display:flex;align-items:center;padding:0 12px;border-bottom:1px solid var(--line);font-size:14px}
+  .site-header nav a:last-child{border-bottom:0;margin-top:6px;justify-content:center}
+  h1{font-size:clamp(42px,13vw,54px);line-height:.97;letter-spacing:-.058em;margin:18px 0 21px}
+  h2{font-size:clamp(34px,10.5vw,44px);line-height:1.02}
+  .hero{min-height:auto;grid-template-columns:minmax(0,1fr);padding:42px 0 66px;gap:38px;text-align:left}
+  .hero-copy{align-items:stretch}.eyebrow{font-size:9px}.hero-lead{font-size:16px;line-height:1.6}
+  .hero-actions{width:100%;flex-direction:column;margin:27px 0 24px}.button{width:100%;min-height:54px}
+  .hero-proof{display:grid;grid-template-columns:1fr;gap:9px;font-size:11px}
+  .hero-visual{height:auto;width:100%;display:block;padding:0 7vw}
+  .hero-visual:before{width:100%;height:72%;left:0;top:12%}
+  .hero-visual img{width:100%;height:auto;max-height:none;border-radius:22px;object-fit:contain}
+  .floating-card{display:none}.visual-label{top:-8px;right:1vw;font-size:7px;padding:6px 8px}
+  .problem-band,.experience,.admin-section,.numbers-section,.whatsapp-section{padding:72px 0}
+  .problem-grid{grid-template-columns:minmax(0,1fr);gap:20px}.problem-grid h2{margin-bottom:10px}
+  .pain-list article{grid-template-columns:36px minmax(0,1fr);gap:10px;padding:20px 0}.pain-list h3{font-size:17px}.pain-list p{font-size:13px}
+  .section-heading{grid-template-columns:minmax(0,1fr);gap:10px;margin-bottom:34px}.section-heading>p{font-size:14px;line-height:1.6}
+  .steps{grid-template-columns:minmax(0,1fr);margin-bottom:24px}.step{border-right:0;border-bottom:1px solid var(--line);min-height:auto;padding:26px}.step:last-child{border-bottom:0}.step-icon{margin:20px 0 17px}
+  .menu-demo{width:100%}.menu-demo-top{padding:0 16px}.category-tabs{padding:14px 16px 4px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none}.category-tabs::-webkit-scrollbar{display:none}.category-tab{min-height:44px;scroll-snap-align:start}
+  .demo-order{grid-template-columns:minmax(0,1fr);gap:20px;padding:26px 18px}.demo-order h3{font-size:24px}.choice-chips{gap:7px}.choice-chips span{font-size:10px}.fake-add{width:100%;min-height:48px}
+  .admin-grid{grid-template-columns:minmax(0,1fr);gap:34px}.admin-image{order:0;width:calc(100% + 16px);margin-left:-8px}.admin-image img{width:100%;height:auto;border-radius:14px}.admin-copy{order:1}.admin-copy h2{font-size:36px}.feature-list li{gap:12px}.feature-list small{font-size:12px}
+  .calculation{grid-template-columns:minmax(0,1fr);gap:8px}.calculation>div{min-height:102px;padding:18px}.calculation>b{transform:none;line-height:1;text-align:center}.calculation strong{font-size:23px}.calculation .result strong{font-size:28px}
+  .whatsapp-grid{grid-template-columns:minmax(0,1fr);gap:40px}.whatsapp-copy>p:not(.section-kicker){font-size:15px}.benefit-row{grid-template-columns:60px minmax(0,1fr)}
+  .chat-phone{width:100%;max-width:390px;border-width:6px;border-radius:26px}.chat-body{padding:14px}.bubble{font-size:11px}.link-preview{padding:10px}.link-preview>span{width:44px;height:44px;flex:0 0 44px}
+  .install-section{padding:64px 0}.install-card{grid-template-columns:minmax(0,1fr);padding:30px 20px;gap:34px}.install-copy h2{font-size:36px}.install-copy>p:last-child{font-size:14px}.install-icons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.install-icons div{width:100%;height:auto;aspect-ratio:1;border-radius:15px}.install-icons b{display:none}.install-icons small{font-size:6px;text-align:center}
+  .clarity{padding-bottom:68px}.clarity-card{grid-template-columns:1fr;padding:25px 21px}.clarity-card h2{font-size:28px}.clarity-card p:last-child{font-size:14px}
+  .final-cta{padding:76px 0}.final-cta h2{font-size:40px}.final-cta>div>p:not(.section-kicker){font-size:14px;line-height:1.65}
+  footer{padding:28px 0 calc(28px + env(safe-area-inset-bottom))}footer .section-shell{flex-direction:column;align-items:flex-start;gap:18px}footer p{line-height:1.6}
+}
+@media(max-width:370px){.section-shell{width:calc(100% - 24px)}h1{font-size:39px}.hero-visual{padding:0 4vw}.admin-copy h2,.install-copy h2{font-size:32px}.install-card{padding-inline:16px}.chat-phone{border-width:5px}}
+@media(hover:none) and (pointer:coarse){.button,.category-tab,.fake-add,.menu-button{min-height:48px}}
+
