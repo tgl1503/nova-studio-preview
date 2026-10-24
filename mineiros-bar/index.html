@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0908">
+  <meta name="description" content="Demonstração conceitual de um sistema de pedidos e gestão para o Mineiro's Bar.">
+  <title>Mineiro's Bar — Demonstração do aplicativo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="demo-strip" role="status">
+    <span>Demonstração conceitual</span>
+    Esta página apresenta como o aplicativo poderá ficar. Nenhum pedido é processado aqui.
+  </div>
+
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Mineiro's Bar — início">
+      <span class="brand-mark">🔥</span>
+      <span><strong>MINEIRO'S</strong><em>Bar</em></span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Navegação principal">
+      <a href="#experiencia">O aplicativo</a>
+      <a href="#gestao">Painel admin</a>
+      <a href="#whatsapp">WhatsApp</a>
+      <a class="nav-cta" href="#proximo-passo">Próximo passo</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span> Uma prévia feita para o Mineiro's Bar</div>
+        <h1>Menos tempo no WhatsApp.<br><b>Mais controle do seu bar.</b></h1>
+        <p class="hero-lead">Uma proposta de sistema próprio para receber pedidos, permitir que o cliente monte a marmita e, ao mesmo tempo, mostrar se o dia terminou no lucro ou no prejuízo.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#experiencia">Ver como funcionaria <span>↓</span></a>
+          <a class="button ghost" href="#gestao">Conhecer o painel</a>
+        </div>
+        <div class="hero-proof" aria-label="Principais benefícios">
+          <span>✓ Pedido sem conversa demorada</span>
+          <span>✓ Venda do balcão também entra na conta</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="visual-label">IMAGEM ILUSTRATIVA</div>
+        <img src="assets/app-pedidos-demo.jpg" alt="Demonstração de uma tela de pedidos do Mineiro's Bar em um celular" width="700" height="1050">
+        <div class="floating-card order-card"><span>Pedido organizado</span><strong>Pronto para preparar</strong></div>
+        <div class="floating-card profit-card"><span>Resultado do dia</span><strong>Visível no painel</strong></div>
+      </div>
+    </section>
+
+    <section class="problem-band" aria-labelledby="problema-titulo">
+      <div class="section-shell problem-grid">
+        <div class="reveal">
+          <p class="section-kicker">O problema de hoje</p>
+          <h2 id="problema-titulo">Vender muito não basta se você não sabe <em>quanto sobrou.</em></h2>
+        </div>
+        <div class="pain-list reveal delay-1">
+          <article><span>01</span><div><h3>WhatsApp toma tempo</h3><p>Cada pedido exige perguntas, respostas e conferência manual.</p></div></article>
+          <article><span>02</span><div><h3>Vendas ficam espalhadas</h3><p>Aplicativo, balcão e telefone precisam aparecer em um só lugar.</p></div></article>
+          <article><span>03</span><div><h3>O lucro fica no escuro</h3><p>Sem registrar os gastos, fica difícil saber o resultado real do dia.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section-shell" id="experiencia">
+      <div class="section-heading reveal">
+        <div><p class="section-kicker">Experiência do cliente</p><h2>O pedido acontece no ritmo do cliente.</h2></div>
+        <p>Ele escolhe, personaliza e envia tudo organizado — sem precisar perguntar item por item no WhatsApp.</p>
+      </div>
+
+      <div class="steps" role="list">
+        <article class="step reveal" role="listitem"><span class="step-number">01</span><div class="step-icon">↗</div><h3>Abre o cardápio</h3><p>O link chega automaticamente pelo WhatsApp e abre direto no celular.</p></article>
+        <article class="step reveal delay-1" role="listitem"><span class="step-number">02</span><div class="step-icon">＋</div><h3>Monta o pedido</h3><p>Seleciona marmita, espeto, acompanhamento, porção ou baguete.</p></article>
+        <article class="step reveal delay-2" role="listitem"><span class="step-number">03</span><div class="step-icon">✓</div><h3>Confirma sem confusão</h3><p>O pedido chega completo, com itens, quantidades e observações.</p></article>
+      </div>
+
+      <div class="menu-demo reveal" aria-label="Exemplo interativo de categorias do cardápio">
+        <div class="menu-demo-top">
+          <div><span class="live-dot"></span> PRÉVIA DO CARDÁPIO</div>
+          <span>Somente demonstração</span>
+        </div>
+        <div class="category-tabs" role="tablist" aria-label="Categorias">
+          <button class="category-tab active" data-category="marmitas" role="tab" aria-selected="true">🍛 Marmitas</button>
+          <button class="category-tab" data-category="espetos" role="tab" aria-selected="false">🍢 Espetos</button>
+          <button class="category-tab" data-category="porcoes" role="tab" aria-selected="false">🍟 Porções</button>
+          <button class="category-tab" data-category="baguetes" role="tab" aria-selected="false">🥖 Baguetes</button>
+        </div>
+        <div class="demo-order">
+          <div>
+            <p class="mini-label">SELEÇÃO ILUSTRATIVA</p>
+            <h3 id="demo-title">Monte sua marmita</h3>
+            <p id="demo-description">Escolha o tamanho, o espeto e os acompanhamentos.</p>
+          </div>
+          <div class="choice-chips" id="demo-choices"><span>Arroz</span><span>Feijão tropeiro</span><span>Vinagrete</span><span>Espeto de carne</span></div>
+          <button type="button" class="fake-add" aria-label="Botão demonstrativo">Adicionar <b>＋</b></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="admin-section" id="gestao">
+      <div class="section-shell admin-grid">
+        <div class="admin-image reveal">
+          <div class="visual-label">IMAGEM ILUSTRATIVA</div>
+          <img src="assets/painel-admin-demo.jpg" alt="Demonstração do painel administrativo com vendas, gastos e lucro do dia" width="1100" height="733">
+        </div>
+        <div class="admin-copy reveal delay-1">
+          <p class="section-kicker">Painel administrativo</p>
+          <h2>No fim do dia, a pergunta deixa de ser “será que deu lucro?”</h2>
+          <p>O futuro painel reunirá o que entrou e o que saiu para transformar movimento em informação clara.</p>
+          <ul class="feature-list">
+            <li><span>01</span><div><strong>Vendas automáticas</strong><small>Pedidos feitos no aplicativo já entram no total.</small></div></li>
+            <li><span>02</span><div><strong>Venda manual</strong><small>Registre balcão, telefone e qualquer venda feita fora do app.</small></div></li>
+            <li><span>03</span><div><strong>Controle de gastos</strong><small>Informe compras, insumos e despesas do funcionamento.</small></div></li>
+            <li><span>04</span><div><strong>Relatório de resultado</strong><small>Veja vendas, gastos, lucro estimado e histórico por período.</small></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="numbers-section section-shell" aria-labelledby="calculo-titulo">
+      <div class="section-heading reveal">
+        <div><p class="section-kicker">A conta que importa</p><h2 id="calculo-titulo">Um fechamento simples de entender.</h2></div>
+        <p>Os números abaixo são apenas uma simulação para demonstrar a lógica do painel.</p>
+      </div>
+      <div class="calculation reveal">
+        <div><span>Vendas no aplicativo</span><strong>R$ 287,50</strong></div>
+        <b>＋</b>
+        <div><span>Vendas manuais</span><strong>R$ 136,00</strong></div>
+        <b>−</b>
+        <div class="expense"><span>Gastos do dia</span><strong>R$ 198,30</strong></div>
+        <b>=</b>
+        <div class="result"><span>Lucro estimado</span><strong>R$ 225,20</strong><small>SIMULAÇÃO</small></div>
+      </div>
+    </section>
+
+    <section class="whatsapp-section" id="whatsapp">
+      <div class="section-shell whatsapp-grid">
+        <div class="whatsapp-copy reveal">
+          <p class="section-kicker green">Automação no WhatsApp</p>
+          <h2>O WhatsApp continua sendo a porta. Só deixa de ser o balcão.</h2>
+          <p>Quando alguém pedir o cardápio, a automação poderá responder com o link. O cliente monta o pedido por conta própria e você recebe tudo organizado.</p>
+          <div class="benefit-row"><span>24h</span><p>O link pode ser enviado mesmo quando você está ocupado.</p></div>
+          <div class="benefit-row"><span>1×</span><p>As informações são preenchidas uma vez pelo próprio cliente.</p></div>
+        </div>
+        <div class="chat-phone reveal delay-1" aria-label="Conversa demonstrativa no WhatsApp">
+          <div class="chat-header"><span class="chat-avatar">M</span><div><strong>Mineiro's Bar</strong><small>Resposta automática • demonstração</small></div></div>
+          <div class="chat-body">
+            <div class="bubble customer">Oi! Quero ver o cardápio de hoje.</div>
+            <div class="bubble business">Olá! 👋 Para montar seu pedido com calma, acesse nosso cardápio digital:</div>
+            <div class="link-preview"><span>🔥</span><div><small>CARDÁPIO DIGITAL</small><strong>Escolha e monte seu pedido</strong><p>mineirosbar.com.br</p></div></div>
+            <div class="bubble customer">Perfeito, vou pedir por lá!</div>
+          </div>
+          <div class="chat-caption">Conversa ilustrativa — automação ainda não implementada</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="install-section section-shell">
+      <div class="install-card reveal">
+        <div class="install-copy"><p class="section-kicker">Funciona como aplicativo</p><h2>Abre pelo link.<br>Pode ficar na tela inicial.</h2><p>Será um sistema web instalável: o cliente acessa sem depender de loja de aplicativos e pode adicionar um atalho no celular ou no computador.</p></div>
+        <div class="install-icons" aria-hidden="true"><div><span>↗</span><small>ABRIR LINK</small></div><b>→</b><div class="highlight"><span>＋</span><small>ADICIONAR</small></div><b>→</b><div><span>🔥</span><small>USAR COMO APP</small></div></div>
+      </div>
+    </section>
+
+    <section class="clarity section-shell">
+      <div class="clarity-card reveal">
+        <span class="clarity-icon">i</span>
+        <div><p class="section-kicker">Importante</p><h2>O que você está vendo é uma demonstração da ideia.</h2><p>Esta página não é o aplicativo final e não recebe pedidos. As telas, valores e conversas são exemplos visuais de como a solução do Mineiro's Bar poderá funcionar depois da aprovação e do desenvolvimento.</p></div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="proximo-passo">
+      <div class="section-shell reveal">
+        <p class="section-kicker">Próximo passo</p>
+        <h2>Seu cardápio, seus pedidos e seu lucro.<br><em>Tudo no mesmo lugar.</em></h2>
+        <p>Se a proposta fizer sentido, o próximo passo é alinhar cardápio, regras de montagem, rotina do caixa e identidade final para transformar esta prévia no sistema real.</p>
+        <a class="button primary" href="#inicio">Rever a demonstração <span>↑</span></a>
+        <small>PROPOSTA CONCEITUAL • MINEIRO'S BAR</small>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="section-shell"><div class="brand"><span class="brand-mark">🔥</span><span><strong>MINEIRO'S</strong><em>Bar</em></span></div><p>Demonstração visual para análise. Nenhuma funcionalidade comercial está ativa nesta página.</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
